@@ -1,0 +1,187 @@
+
+
+<!--
+  IMPORTANT!
+
+  Keep this file unchanged to use as a template for all future project pages.
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!--
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="../assets/images/IMG_9264.png" />
+     <title>Jocelyn's Portfolio</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!--
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">Jocelyn's Portfolio</span>
+        <!--
+          TODO - Change the email after 'mailto:' to your email address for contact
+
+          (this should be the same across all pages)
+        -->
+        <a class="button" target="_blank" href="mailto:pc3153@columbia.edu">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!--
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">✈️ Exploratory Data Analysis on Airline Pricing Strategy </div>
+        <div class="subheader-text">Problem Statement:</div>
+        <div class="body-text">A private equity firm, has purchased an airways and plans to expand into the domestic Indian market. To succeed in this venture, they need insights into the factors influencing airline pricing, competitor pricing strategies, and the key drivers of price variations. This analysis is crucial for setting competitive yet profitable pricing strategies in a dynamic market.</div>
+        <div class="body-text">Specifically, the project aims to explore the following questions:</div>
+        <div class="body-text">💸1) Compare pricing across competitors </div>
+        <div class="body-text">🛫2) Understand the factors that influence airline pricing</div>
+        <div class="body-text">🏇3) Develop a model to identify key drivers of increased pricing</div>
+        <image class="project-header-image" src="../assets/NewImages/IndiaMap.webp">
+
+        <div class="subheader-text">Project Summary:</div>
+        <div class="body-text">1) Data Preparation: Cleaned and merged datasets of 79,635 flight details and corresponding price trends to ensure consistency. Segmented flights by class (Economy, Premium Economy, Business).</div>
+        <div class="body-text">2) Exploratory Data Analysis: Examined pricing trends based on: Booking Time (Relationship between fare and days before the journey); Departure Time (Variance in pricing based on flight times); Flight Duration (Correlation between flight length and fare); Seasonality (Monthly demand patterns); Destination Popularity (Identified high-demand routes).</div>
+        <div class="body-text">3) Competitor Pricing Analysis: Benchmarked Majestic Airways against key competitors (e.g., Vistara, Air India); Compared average fares and market share by airline. </div>
+        <div class="body-text">4) Model Development: Built a regression model to determine factors most strongly influencing price increases. </div>
+
+         <a class="button" href="../EDA hotel bookings .html" target="_blank">
+              <span class="button-text">Python Code (using Numpy, Pandas, Seaborn, Matplotlib)</span>
+              <image src="../assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+         </a>
+
+
+      <!-- PROJECT DETAILS -->
+      <!--
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Inferences and Conclusion:</div>
+        <div class="project-gallery-content">
+            <!--
+              TODO
+
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+
+              Full Width Image:
+
+                <div class="gallery-image-container">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image:
+
+                <div class="gallery-image-container half-width">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
+            <div class="gallery-image-container half-width">
+              <img src="../assets/NewImages/airline.png" class="gallery-image">
+              <span class="image-caption">Air India and Vistara command the highest average fares, may be due to their tiered service offerings.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/NewImages/ms.png" class="gallery-image">
+              <span class="image-caption">Vistara leads with 51.3% share, followed by Air India at 29.65%, with smaller players occupying the remaining market.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/NewImages/bookdate.png" class="gallery-image">
+              <span class="image-caption">Fares increase as the departure date approaches due to last-minute demand.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/NewImages/departure.png" class="gallery-image">
+              <span class="image-caption">Morning flights tend to have higher fares, reflecting peak demand periods.</span>
+            </div>
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/NewImages/duration.png" class="gallery-image">
+              <span class="image-caption">Longer flights incur higher costs and correspondingly higher fares.</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/NewImages/Destination.png" class="gallery-image">
+              <span class="image-caption">February experiences peak demand, while March is the slowest month. Focus marketing efforts during February while offering promotions in March to boost demand. Delhi is the most popular destination across routes. 🏹 Enhance capacity on Delhi routes to capture high demand and revenue potential.</span>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <!--
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram)
+
+        This should be the same across all pages.
+      -->
+
+      <!--
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter)
+
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/jocelyn-pei-ling-chen/">
+        <image src="../assets/icons/icons8-linkedin-circled.gif" class="footer-icon"/>
+      </a>
+      <!--
+        TODO - Change the email after "mailto" to your contact email
+
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="mailto:sc5083@columbia.edu">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+<footer>
+  <p class="copyright text-muted" align="center">Copyright © 2025 Jocelyn Chen</p>
+</footer>
+	</body>
+</html>
